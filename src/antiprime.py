@@ -9,22 +9,22 @@ def main(x) :
 	d = 0                              
 	n = 1	
 	while n <= x:
-    		if x % n == 0:
-        		d = d+ 1 
-    		n = n + 1 
+		if x % n == 0:
+			d = d+ 1 
+		n = n + 1 
 	l = x - 1
 	b = 0
 
 	while l >= 1:
-    		a = 1
-    		t = 0 
-    		while a <= l:
-        		if l % a == 0:
-            			t = t + 1   
-        		a = a + 1
+		a = 1
+		t = 0 
+		while a <= l:
+			if l % a == 0:
+				t = t + 1   
+			a = a + 1
 		if t > b:
-        		b = t
-    		l = l - 1  
+			b = t
+		l = l - 1  
 
 	## THE LAST LINES OF YOUR CODE SHOULD EITHER
 	## RETURN THE VALUE "anti-prime" or "not anti-prime"
@@ -32,9 +32,9 @@ def main(x) :
 	## OF CODE ALLOW THIS FUNCTION TO RETURN THE VALUE
 	## "anti-prime" or "not anti-prime"
 	if d > b:
-    		return "anti-prime"
+		return "anti-prime"
 	else:
-    		return "not anti-prime"
+		return "not anti-prime"
 	
 ## DO NOT REMOVE THIS LINE BELOW
 if __name__ == "__main__" :
